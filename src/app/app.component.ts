@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-blog';
+  corPadrao: string = 'black'
+  trocouCor: boolean = false;
+  trocarCor() {
+    this.trocouCor = !this.trocouCor;
+    this.corPadrao = this.trocouCor ? 'red' : 'black';
+  }
 }
+

@@ -1,4 +1,6 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
-<router-outlet></router-outlet>
+<div [style.background-color]="corPadrao">
+  <header>
+    <app-menu-bar (enviarEvento)="trocarCor()"></app-menu-bar>
+  </header>
+  <router-outlet></router-outlet>
+</div>
